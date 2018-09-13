@@ -2,6 +2,7 @@ import normalizeName from './normalize-name'
 import removeUnderage from './remove-underage'
 import urlBuilder from './url-builder'
 import justSagitarians from './just-sagitarians'
+import findItem from './find-item'
 
 describe('reduce usage', () => {
   const { reduce } = Array.prototype
@@ -41,6 +42,11 @@ describe('reduce usage', () => {
 
   test.skip('justSagitarians', () => {
     justSagitarians(input)
+    expect(Array.prototype.reduce).not.toHaveBeenCalled()
+  })
+
+  test.skip('findItem', () => {
+    findItem(input, { id: 2 })
     expect(Array.prototype.reduce).not.toHaveBeenCalled()
   })
 
