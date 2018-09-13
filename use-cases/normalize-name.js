@@ -1,6 +1,3 @@
-// input: Array<{ id: number, name: string, birth: Date }>
-// output: Array<{ id: number, name: capitalize(string), birth: Date }>
-
 function capitalize(string) {
   if (string.length === 0) return ''
 

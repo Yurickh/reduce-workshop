@@ -1,7 +1,7 @@
 import normalizeName from './normalize-name'
 import removeUnderage from './remove-underage'
 
-xdescribe('reduce usage', () => {
+describe('reduce usage', () => {
   const { reduce } = Array.prototype
   const input = [{
     id: 0,
@@ -22,12 +22,12 @@ xdescribe('reduce usage', () => {
     Array.prototype.reduce = jest.fn(reduce)
   })
 
-  test('normalizeName', () => {
+  test.skip('normalizeName', () => {
     normalizeName(input)
     expect(Array.prototype.reduce).not.toHaveBeenCalled()
   })
 
-  test('removeUnderage', () => {
+  test.skip('removeUnderage', () => {
     removeUnderage(input)
     expect(Array.prototype.reduce).not.toHaveBeenCalled()
   })
