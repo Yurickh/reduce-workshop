@@ -39,4 +39,10 @@ describe('normalize-name', () => {
       expect(name[0]).toEqual(multipleInput[index].name[0].toUpperCase())
     })
   })
+
+  it('does not break when receiving an empty string', () => {
+    const normalized = normalizeName([{ name: '' }])
+
+    expect(normalized[0].name).toBe('')
+  })
 })
