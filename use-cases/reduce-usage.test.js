@@ -1,6 +1,7 @@
 import normalizeName from './normalize-name'
 import removeUnderage from './remove-underage'
 import urlBuilder from './url-builder'
+import justSagitarians from './just-sagitarians'
 
 describe('reduce usage', () => {
   const { reduce } = Array.prototype
@@ -35,6 +36,11 @@ describe('reduce usage', () => {
 
   test.skip('urlBuilder', () => {
     urlBuilder(input[0])
+    expect(Array.prototype.reduce).not.toHaveBeenCalled()
+  })
+
+  test.skip('justSagitarians', () => {
+    justSagitarians(input)
     expect(Array.prototype.reduce).not.toHaveBeenCalled()
   })
 
