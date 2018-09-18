@@ -3,6 +3,7 @@ import removeUnderage from './remove-underage'
 import urlBuilder from './url-builder'
 import justSagitarians from './just-sagitarians'
 import findItem from './find-item'
+import maxSquare from './max-square'
 
 describe('reduce usage', () => {
   const { reduce } = Array.prototype
@@ -47,6 +48,11 @@ describe('reduce usage', () => {
 
   test.skip('findItem', () => {
     findItem(input, { id: 2 })
+    expect(Array.prototype.reduce).not.toHaveBeenCalled()
+  })
+
+  test.skip('maxSquare', () => {
+    maxSquare([3, 5, 9, 12, 25, 18, 144])
     expect(Array.prototype.reduce).not.toHaveBeenCalled()
   })
 
