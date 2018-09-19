@@ -5,11 +5,5 @@ function isUnderage(date) {
 }
 
 export default function removeUnderage(array) {
-  return array.reduce((acc, item) => {
-    if (isUnderage(item.birth)) {
-      return acc
-    }
-
-    return [...acc, item]
-  }, [])
+  return array.reduce((acc, item) => (isUnderage(item.birth) ? acc : [...acc, item]), [])
 }
