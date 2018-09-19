@@ -1,4 +1,4 @@
-import findItem from './find-item'
+import findItem from '../find-item'
 
 describe('findItem', () => {
   const input = [{

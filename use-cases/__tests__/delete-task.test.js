@@ -1,4 +1,4 @@
-import deleteTask from './delete-task'
+import deleteTask from '../delete-task'
 
 describe('deleteTask', () => {
   const tasks = {

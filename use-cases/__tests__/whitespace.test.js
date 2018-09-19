@@ -1,4 +1,4 @@
-import whitespace from './whitespace'
+import whitespace from '../whitespace'
 
 describe('whitespace', () => {
   it('creates an array with length equal to the input', () => {

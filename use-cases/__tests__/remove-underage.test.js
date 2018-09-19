@@ -1,4 +1,4 @@
-import removeUnderage from './remove-underage'
+import removeUnderage from '../remove-underage'
 
 describe('removeUnderage', () => {
   it('outputs an empty array when receiving an array', () => {

@@ -1,4 +1,4 @@
-import maxSquare from './max-square'
+import maxSquare from '../max-square'
 
 describe('maxSquare', () => {
   it('is undefined when input is empty', () => {

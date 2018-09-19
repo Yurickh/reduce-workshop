@@ -1,4 +1,4 @@
-import urlBuilder from './url-builder'
+import urlBuilder from '../url-builder'
 
 describe('urlBuilder', () => {
   it('returns an empty string when no data is passed', () => {

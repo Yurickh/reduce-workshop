@@ -1,4 +1,4 @@
-import normalizeName from './normalize-name'
+import normalizeName from '../normalize-name'
 
 describe('normalize-name', () => {
   const singleInput = [{

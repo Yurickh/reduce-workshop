@@ -1,4 +1,4 @@
-import justSagitarians from './just-sagitarians'
+import justSagitarians from '../just-sagitarians'
 
 describe('justSagitarians', () => {
   it('is true for an empty array', () => {
