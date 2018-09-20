@@ -31,37 +31,37 @@ describe('reduce usage', () => {
     Array.prototype.reduce = jest.fn(reduce)
   })
 
-  test.skip('normalizeName', () => {
+  test('normalizeName', () => {
     normalizeName(input)
     expect(Array.prototype.reduce).not.toHaveBeenCalled()
   })
 
-  test.skip('removeUnderage', () => {
+  test('removeUnderage', () => {
     removeUnderage(input)
     expect(Array.prototype.reduce).not.toHaveBeenCalled()
   })
 
-  test.skip('urlBuilder', () => {
+  test('urlBuilder', () => {
     urlBuilder(input[0])
     expect(Array.prototype.reduce).not.toHaveBeenCalled()
   })
 
-  test.skip('justSagitarians', () => {
+  test('justSagitarians', () => {
     justSagitarians(input)
     expect(Array.prototype.reduce).not.toHaveBeenCalled()
   })
 
-  test.skip('findItem', () => {
+  test('findItem', () => {
     findItem(input, { id: 2 })
     expect(Array.prototype.reduce).not.toHaveBeenCalled()
   })
 
-  test.skip('maxSquare', () => {
+  test('maxSquare', () => {
     maxSquare([3, 5, 9, 12, 25, 18, 144])
     expect(Array.prototype.reduce).not.toHaveBeenCalled()
   })
 
-  test.skip('whitespace', () => {
+  test('whitespace', () => {
     whitespace(20)
     expect(Array.prototype.reduce).not.toHaveBeenCalled()
   })

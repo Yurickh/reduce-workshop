@@ -4,12 +4,6 @@ function isPerfectSquare(number) {
 }
 
 export default function maxSquare(list) {
-  return list.reduce((perfect, number) => {
-    if (isPerfectSquare(number)) {
-      if (perfect === undefined) return number
-      if (perfect < number) return number
-    }
-
-    return perfect
-  }, undefined)
+  const filteredList = list.filter(element => isPerfectSquare(element))
+  return filteredList.length > 0 ? Math.max(...filteredList) : undefined
 }
