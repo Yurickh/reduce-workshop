@@ -22,6 +22,10 @@ For being so versatile, it is often misused, in cases where `every`, `some`, `in
 
 No. Reduce has its place and reason for existing. The goal here is to identify when it is not required to better write idiomatic, readable Javascript.
 
+### Do you have an answer sheet?
+
+Yup. You'll find Novatics' answers on the branch `answers` on this repo.
+
 ## General instructions on running the test suite
 
 ### 1. Install dependencies
