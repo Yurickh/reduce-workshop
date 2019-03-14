@@ -3,6 +3,9 @@ import findItem from '../find-item'
 describe('findItem', () => {
   const input = [
     {
+      id: 3,
+    },
+    {
       id: 0,
       name: 'Yurick',
     },
@@ -13,6 +16,10 @@ describe('findItem', () => {
     {
       id: 2,
       name: 'Levino',
+    },
+    {
+      food: 'pudim',
+      time: 'dessert',
     },
   ]
 
@@ -29,5 +36,12 @@ describe('findItem', () => {
 
   it('is undefined if item is not found', () => {
     expect(findItem(input, { id: 200 })).toBeUndefined()
+  })
+
+  it('finds generic item', () => {
+    expect(findItem(input, { food: 'pudim' })).toEqual({
+      food: 'pudim',
+      time: 'dessert',
+    })
   })
 })

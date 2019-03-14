@@ -4,12 +4,17 @@ function isPerfectSquare(number) {
 }
 
 export default function maxSquare(list) {
-  return list.reduce((perfect, number) => {
-    if (isPerfectSquare(number)) {
-      if (perfect === undefined) return number
-      if (perfect < number) return number
-    }
+  const squares = list.filter(isPerfectSquare)
 
-    return perfect
-  }, undefined)
+  if (squares.length === 0) return undefined
+
+  return Math.max(...squares)
+
+  // return list.reduce((perfect, number) => {
+  //   if (isPerfectSquare(number)) {
+  //     if (perfect === undefined) return number
+  //     if (perfect < number) return number
+  //   }
+  //   return perfect
+  // }, undefined)
 }
