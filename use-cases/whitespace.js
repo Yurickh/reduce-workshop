@@ -1,3 +1,3 @@
 export default function whitespace(number) {
-  return Array(number).fill('nbsp;')
+  return Array(number).fill('&nbsp;')
 }

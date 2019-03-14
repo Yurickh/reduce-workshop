@@ -10,6 +10,6 @@ describe('whitespace', () => {
   })
 
   it('fills the array with nbsp;', () => {
-    expect(whitespace(20).every(one => one === 'nbsp;')).toBe(true)
+    expect(whitespace(20).every(one => one === '&nbsp;')).toBe(true)
   })
 })
