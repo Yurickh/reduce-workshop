@@ -6,6 +6,9 @@ function isSagitarian(date) {
 }
 
 export default function justSagitarians(array) {
-  return array
-    .reduce((everyoneSagitarian, person) => everyoneSagitarian && isSagitarian(person.birth), true)
+  return array.reduce(
+    (everyoneSagitarian, person) =>
+      everyoneSagitarian && isSagitarian(person.birth),
+    true,
+  )
 }

@@ -73,9 +73,7 @@ describe('deleteTask', () => {
         ...tasks.list,
         20180201: {
           duration: tasks.list[20180201].tasks[1].duration,
-          tasks: [
-            tasks.list[20180201].tasks[1],
-          ],
+          tasks: [tasks.list[20180201].tasks[1]],
         },
       },
     })

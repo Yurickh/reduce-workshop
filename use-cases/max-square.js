@@ -1,6 +1,6 @@
 function isPerfectSquare(number) {
   const root = Math.sqrt(number)
-  return (root - parseInt(root, 10)) === 0
+  return root - parseInt(root, 10) === 0
 }
 
 export default function maxSquare(list) {

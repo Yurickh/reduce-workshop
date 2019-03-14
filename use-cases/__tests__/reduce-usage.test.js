@@ -8,19 +8,23 @@ import whitespace from '../whitespace'
 
 describe('reduce usage', () => {
   const { reduce } = Array.prototype
-  const input = [{
-    id: 0,
-    name: 'Yurick',
-    birth: new Date('1993-12-04'),
-  }, {
-    id: 1,
-    name: 'Luana',
-    birth: new Date(`${new Date().getFullYear() - 12}-12-02`),
-  }, {
-    id: 2,
-    name: 'Vinicius',
-    birth: new Date('1991-07-30'),
-  }]
+  const input = [
+    {
+      id: 0,
+      name: 'Yurick',
+      birth: new Date('1993-12-04'),
+    },
+    {
+      id: 1,
+      name: 'Luana',
+      birth: new Date(`${new Date().getFullYear() - 12}-12-02`),
+    },
+    {
+      id: 2,
+      name: 'Vinicius',
+      birth: new Date('1991-07-30'),
+    },
+  ]
 
   beforeEach(() => {
     /* eslint-disable-next-line no-extend-native */

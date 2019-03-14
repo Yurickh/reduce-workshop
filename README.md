@@ -33,6 +33,7 @@ Yup. You'll find Novatics' answers on the branch `answers` on this repo.
 ```bash
 yarn install
 ```
+
 or, for npm users
 
 ```bash
@@ -43,29 +44,34 @@ npm install
 
 This workshop uses [jest](https://jestjs.io) as its test runner/framework.
 
-I've also had to use [babel](https://babeljs.io) since as of ` node@10.10` native `imports` are still experimental and I don't like `require`.
+I've also had to use [babel](https://babeljs.io) since as of `node@10.10` native `imports` are still experimental and I don't like `require`.
 
 ```bash
 yarn test
 ```
+
 ```bash
 npm test
 ```
 
 For watch mode:
+
 ```bash
 yarn test:watch
 yarn test --watch
 ```
+
 ```bash
 npm run test:watch
 npm run test -- --watch
 ```
 
 For coverage data:
+
 ```bash
 yarn test --coverage
 ```
+
 ```bash
 npm run test -- --coverage
 ```

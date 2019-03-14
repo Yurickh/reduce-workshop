@@ -1,5 +1,5 @@
 {
-  "extends": ["airbnb", "plugin:jest/recommended"],
+  "extends": ["airbnb", "plugin:jest/recommended", "prettier"],
   "plugins": ["jest"],
   "rules": {
     "semi": ["error", "never"]

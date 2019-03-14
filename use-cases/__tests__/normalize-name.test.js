@@ -1,11 +1,13 @@
 import normalizeName from '../normalize-name'
 
 describe('normalize-name', () => {
-  const singleInput = [{
-    id: 0,
-    name: 'avocado',
-    birth: new Date('1993-12-04'),
-  }]
+  const singleInput = [
+    {
+      id: 0,
+      name: 'avocado',
+      birth: new Date('1993-12-04'),
+    },
+  ]
 
   const multipleInput = [...singleInput, ...singleInput, ...singleInput]
 

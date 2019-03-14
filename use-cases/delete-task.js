@@ -10,16 +10,14 @@ function removeDeletedTask(arrayOfTasks, task, deletedTask) {
     return arrayOfTasks
   }
 
-  return [
-    ...arrayOfTasks,
-    task,
-  ]
+  return [...arrayOfTasks, task]
 }
 
 export default function deleteTask(state, deletedTask) {
   const list = Object.keys(state.list).reduce((updated, day) => {
     const newTasks = state.list[day].tasks.reduce(
-      (arrayOfTasks, task) => removeDeletedTask(arrayOfTasks, task, deletedTask),
+      (arrayOfTasks, task) =>
+        removeDeletedTask(arrayOfTasks, task, deletedTask),
       [],
     )
 

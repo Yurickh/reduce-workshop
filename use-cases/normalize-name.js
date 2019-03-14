@@ -11,8 +11,14 @@ function capitalize(string) {
 }
 
 export default function normalizeName(array) {
-  return array.reduce((acc, item) => [...acc, {
-    ...item,
-    name: capitalize(item.name),
-  }], [])
+  return array.reduce(
+    (acc, item) => [
+      ...acc,
+      {
+        ...item,
+        name: capitalize(item.name),
+      },
+    ],
+    [],
+  )
 }

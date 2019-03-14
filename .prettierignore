@@ -1,0 +1,9 @@
+node_modules
+dist
+lib
+static
+.docz
+.next
+.cache
+coverage
+build
